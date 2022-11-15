@@ -1,2 +1,0 @@
-# pwassignment
-to  store assig 
