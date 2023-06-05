@@ -49,6 +49,7 @@ int levelordertraversal(node *root)
         else
         {
             cout << temp->data << " ";
+            //for reverse level order traversal first right push the left
             if (temp->left)
                 q.push(temp->left);
             if (temp->right)
