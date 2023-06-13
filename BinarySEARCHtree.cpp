@@ -65,7 +65,7 @@ bool search(Node *root, int x)
     }
     return 0;
 }
-//   PREDECESSOR AND SUCESdata
+//   PREDECESSOR AND SUCESSOR
 void sucessor(Node *root, int key, Node *&suc)
 {
     while (root != NULL)
