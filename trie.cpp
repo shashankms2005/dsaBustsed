@@ -44,7 +44,7 @@ public:
             child = new trienode(word[0]);
             root->children[index] = child;
         }
-        insertutil(root, word.substr(1));
+        insertutil(child, word.substr(1));
     }
 
     void insert(string word)
@@ -68,7 +68,7 @@ public:
         {
             return false;
         }
-        return searchutil(root, word.substr(1));
+        return searchutil(child, word.substr(1));
     }
 
     bool search(string word)
@@ -86,7 +86,7 @@ public:
         if(root->children[index]!=NULL){
             child=root->children[index];
         }
-        deleteutil(root,word.substr(1));
+        deleteutil(child,word.substr(1));
     }
 
     void deletion(string word){
